@@ -1,0 +1,12 @@
+//
+//  debug.xcconfig
+//  SmartMirror
+//
+//  Created by Sander Geraedts on 16/01/2019.
+//  Copyright © 2019 Code Panda. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+WEATHER_MAP_API_KEY = "265460e4da92ab530fa98e9365998112"

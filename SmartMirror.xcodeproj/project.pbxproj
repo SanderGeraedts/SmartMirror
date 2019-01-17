@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FF082439555AF1233DAEE86 /* Pods_SmartMirror.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5303B25001DFF031211ED83 /* Pods_SmartMirror.framework */; };
+		51A92D1073BE2AE501C28AE4 /* Pods_SmartMirrorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606DCCAA2B927EC83DE51E58 /* Pods_SmartMirrorUITests.framework */; };
+		AF05B8CE2EB8F84E4F8FD0AB /* Pods_SmartMirrorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE62F5C1C690463D1803D1A /* Pods_SmartMirrorTests.framework */; };
+		C5914C6D21EDCEC900A05B3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5914C6C21EDCEC900A05B3B /* AppDelegate.swift */; };
+		C5914C6F21EDCEC900A05B3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5914C6E21EDCEC900A05B3B /* ViewController.swift */; };
+		C5914C7221EDCEC900A05B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5914C7021EDCEC900A05B3B /* Main.storyboard */; };
+		C5914C7521EDCEC900A05B3B /* SmartMirror.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5914C7321EDCEC900A05B3B /* SmartMirror.xcdatamodeld */; };
+		C5914C7721EDCECB00A05B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5914C7621EDCECB00A05B3B /* Assets.xcassets */; };
+		C5914C7A21EDCECB00A05B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5914C7821EDCECB00A05B3B /* LaunchScreen.storyboard */; };
+		C5914C8521EDCECB00A05B3B /* SmartMirrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5914C8421EDCECB00A05B3B /* SmartMirrorTests.swift */; };
+		C5914C9021EDCECC00A05B3B /* SmartMirrorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5914C8F21EDCECC00A05B3B /* SmartMirrorUITests.swift */; };
+		C5914CA321EDE8E700A05B3B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5914CA221EDE8E700A05B3B /* Weather.swift */; };
+		C5914CA721EF1F5D00A05B3B /* WeatherControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5914CA621EF1F5D00A05B3B /* WeatherControllerModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5914C8121EDCECB00A05B3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5914C6121EDCEC900A05B3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5914C6821EDCEC900A05B3B;
+			remoteInfo = SmartMirror;
+		};
+		C5914C8C21EDCECB00A05B3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5914C6121EDCEC900A05B3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5914C6821EDCEC900A05B3B;
+			remoteInfo = SmartMirror;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C599485AB2644F083A998ED /* Pods-SmartMirrorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMirrorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMirrorTests/Pods-SmartMirrorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CE440C1E9377DBA8752FA58 /* Pods-SmartMirrorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMirrorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMirrorUITests/Pods-SmartMirrorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4CA69EC4639094D7D158C194 /* Pods-SmartMirrorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMirrorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMirrorUITests/Pods-SmartMirrorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A16EB8B81904BB754450AE7 /* Pods-SmartMirror.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMirror.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMirror/Pods-SmartMirror.debug.xcconfig"; sourceTree = "<group>"; };
+		606DCCAA2B927EC83DE51E58 /* Pods_SmartMirrorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMirrorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFD1CDAFA40557159DB17AE /* Pods-SmartMirror.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMirror.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMirror/Pods-SmartMirror.release.xcconfig"; sourceTree = "<group>"; };
+		BCE62F5C1C690463D1803D1A /* Pods_SmartMirrorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMirrorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5914C6921EDCEC900A05B3B /* SmartMirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5914C6C21EDCEC900A05B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5914C6E21EDCEC900A05B3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5914C7121EDCEC900A05B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5914C7421EDCEC900A05B3B /* SmartMirror.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartMirror.xcdatamodel; sourceTree = "<group>"; };
+		C5914C7621EDCECB00A05B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5914C7921EDCECB00A05B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5914C7B21EDCECB00A05B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5914C8021EDCECB00A05B3B /* SmartMirrorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMirrorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5914C8421EDCECB00A05B3B /* SmartMirrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMirrorTests.swift; sourceTree = "<group>"; };
+		C5914C8621EDCECB00A05B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5914C8B21EDCECB00A05B3B /* SmartMirrorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMirrorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5914C8F21EDCECC00A05B3B /* SmartMirrorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMirrorUITests.swift; sourceTree = "<group>"; };
+		C5914C9121EDCECC00A05B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5914CA221EDE8E700A05B3B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		C5914CA621EF1F5D00A05B3B /* WeatherControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherControllerModel.swift; sourceTree = "<group>"; };
+		C5914CA921EF21B000A05B3B /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		C5914CAA21EF21DF00A05B3B /* debug.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.example.xcconfig; sourceTree = "<group>"; };
+		C5914CAB21EF229D00A05B3B /* prod.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = prod.example.xcconfig; sourceTree = "<group>"; };
+		C5914CAC21EF22A800A05B3B /* prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = prod.xcconfig; sourceTree = "<group>"; };
+		D5303B25001DFF031211ED83 /* Pods_SmartMirror.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMirror.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96F40235627CDD769B91E54 /* Pods-SmartMirrorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMirrorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMirrorTests/Pods-SmartMirrorTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5914C6621EDCEC900A05B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF082439555AF1233DAEE86 /* Pods_SmartMirror.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5914C7D21EDCECB00A05B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF05B8CE2EB8F84E4F8FD0AB /* Pods_SmartMirrorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5914C8821EDCECB00A05B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51A92D1073BE2AE501C28AE4 /* Pods_SmartMirrorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D1BA26729AE5CBCB8BC62C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5303B25001DFF031211ED83 /* Pods_SmartMirror.framework */,
+				BCE62F5C1C690463D1803D1A /* Pods_SmartMirrorTests.framework */,
+				606DCCAA2B927EC83DE51E58 /* Pods_SmartMirrorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73D3B3F8F7ED62E9F74D93C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C599485AB2644F083A998ED /* Pods-SmartMirrorTests.debug.xcconfig */,
+				E96F40235627CDD769B91E54 /* Pods-SmartMirrorTests.release.xcconfig */,
+				4CA69EC4639094D7D158C194 /* Pods-SmartMirrorUITests.debug.xcconfig */,
+				1CE440C1E9377DBA8752FA58 /* Pods-SmartMirrorUITests.release.xcconfig */,
+				5A16EB8B81904BB754450AE7 /* Pods-SmartMirror.debug.xcconfig */,
+				6CFD1CDAFA40557159DB17AE /* Pods-SmartMirror.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5914C6021EDCEC900A05B3B = {
+			isa = PBXGroup;
+			children = (
+				C5914C6B21EDCEC900A05B3B /* SmartMirror */,
+				C5914C8321EDCECB00A05B3B /* SmartMirrorTests */,
+				C5914C8E21EDCECC00A05B3B /* SmartMirrorUITests */,
+				C5914C6A21EDCEC900A05B3B /* Products */,
+				73D3B3F8F7ED62E9F74D93C1 /* Pods */,
+				3D1BA26729AE5CBCB8BC62C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C5914C6A21EDCEC900A05B3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5914C6921EDCEC900A05B3B /* SmartMirror.app */,
+				C5914C8021EDCECB00A05B3B /* SmartMirrorTests.xctest */,
+				C5914C8B21EDCECB00A05B3B /* SmartMirrorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5914C6B21EDCEC900A05B3B /* SmartMirror */ = {
+			isa = PBXGroup;
+			children = (
+				C5914C9E21EDCFE200A05B3B /* Controllers */,
+				C5914CA021EDCFF200A05B3B /* Views */,
+				C5914C9D21EDCFCC00A05B3B /* Models */,
+				C5914CA121EDD01100A05B3B /* Supporting Files */,
+			);
+			path = SmartMirror;
+			sourceTree = "<group>";
+		};
+		C5914C8321EDCECB00A05B3B /* SmartMirrorTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5914C8421EDCECB00A05B3B /* SmartMirrorTests.swift */,
+				C5914C8621EDCECB00A05B3B /* Info.plist */,
+			);
+			path = SmartMirrorTests;
+			sourceTree = "<group>";
+		};
+		C5914C8E21EDCECC00A05B3B /* SmartMirrorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5914C8F21EDCECC00A05B3B /* SmartMirrorUITests.swift */,
+				C5914C9121EDCECC00A05B3B /* Info.plist */,
+			);
+			path = SmartMirrorUITests;
+			sourceTree = "<group>";
+		};
+		C5914C9D21EDCFCC00A05B3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5914CA521EDEA7D00A05B3B /* ControllerModels */,
+				C5914CA421EDEA7600A05B3B /* DataModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5914C9E21EDCFE200A05B3B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5914C6C21EDCEC900A05B3B /* AppDelegate.swift */,
+				C5914C6E21EDCEC900A05B3B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C5914CA021EDCFF200A05B3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5914C7021EDCEC900A05B3B /* Main.storyboard */,
+				C5914C7621EDCECB00A05B3B /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5914CA121EDD01100A05B3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5914CA821EF20FB00A05B3B /* BuildConfig */,
+				C5914C7821EDCECB00A05B3B /* LaunchScreen.storyboard */,
+				C5914C7321EDCEC900A05B3B /* SmartMirror.xcdatamodeld */,
+				C5914C7B21EDCECB00A05B3B /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5914CA421EDEA7600A05B3B /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				C5914CA221EDE8E700A05B3B /* Weather.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		C5914CA521EDEA7D00A05B3B /* ControllerModels */ = {
+			isa = PBXGroup;
+			children = (
+				C5914CA621EF1F5D00A05B3B /* WeatherControllerModel.swift */,
+			);
+			path = ControllerModels;
+			sourceTree = "<group>";
+		};
+		C5914CA821EF20FB00A05B3B /* BuildConfig */ = {
+			isa = PBXGroup;
+			children = (
+				C5914CA921EF21B000A05B3B /* debug.xcconfig */,
+				C5914CAA21EF21DF00A05B3B /* debug.example.xcconfig */,
+				C5914CAC21EF22A800A05B3B /* prod.xcconfig */,
+				C5914CAB21EF229D00A05B3B /* prod.example.xcconfig */,
+			);
+			path = BuildConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5914C6821EDCEC900A05B3B /* SmartMirror */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5914C9421EDCECC00A05B3B /* Build configuration list for PBXNativeTarget "SmartMirror" */;
+			buildPhases = (
+				FD884FBF203F3C6C37B20217 /* [CP] Check Pods Manifest.lock */,
+				C5914C6521EDCEC900A05B3B /* Sources */,
+				C5914C6621EDCEC900A05B3B /* Frameworks */,
+				C5914C6721EDCEC900A05B3B /* Resources */,
+				14BA93153D2D8273043092DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartMirror;
+			productName = SmartMirror;
+			productReference = C5914C6921EDCEC900A05B3B /* SmartMirror.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5914C7F21EDCECB00A05B3B /* SmartMirrorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5914C9721EDCECC00A05B3B /* Build configuration list for PBXNativeTarget "SmartMirrorTests" */;
+			buildPhases = (
+				625B0BE16863F3FE9388357B /* [CP] Check Pods Manifest.lock */,
+				C5914C7C21EDCECB00A05B3B /* Sources */,
+				C5914C7D21EDCECB00A05B3B /* Frameworks */,
+				C5914C7E21EDCECB00A05B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5914C8221EDCECB00A05B3B /* PBXTargetDependency */,
+			);
+			name = SmartMirrorTests;
+			productName = SmartMirrorTests;
+			productReference = C5914C8021EDCECB00A05B3B /* SmartMirrorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5914C8A21EDCECB00A05B3B /* SmartMirrorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5914C9A21EDCECC00A05B3B /* Build configuration list for PBXNativeTarget "SmartMirrorUITests" */;
+			buildPhases = (
+				DF528BFA1E3B590A7C49C894 /* [CP] Check Pods Manifest.lock */,
+				C5914C8721EDCECB00A05B3B /* Sources */,
+				C5914C8821EDCECB00A05B3B /* Frameworks */,
+				C5914C8921EDCECB00A05B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5914C8D21EDCECB00A05B3B /* PBXTargetDependency */,
+			);
+			name = SmartMirrorUITests;
+			productName = SmartMirrorUITests;
+			productReference = C5914C8B21EDCECB00A05B3B /* SmartMirrorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5914C6121EDCEC900A05B3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Code Panda";
+				TargetAttributes = {
+					C5914C6821EDCEC900A05B3B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C5914C7F21EDCECB00A05B3B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C5914C6821EDCEC900A05B3B;
+					};
+					C5914C8A21EDCECB00A05B3B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C5914C6821EDCEC900A05B3B;
+					};
+				};
+			};
+			buildConfigurationList = C5914C6421EDCEC900A05B3B /* Build configuration list for PBXProject "SmartMirror" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5914C6021EDCEC900A05B3B;
+			productRefGroup = C5914C6A21EDCEC900A05B3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5914C6821EDCEC900A05B3B /* SmartMirror */,
+				C5914C7F21EDCECB00A05B3B /* SmartMirrorTests */,
+				C5914C8A21EDCECB00A05B3B /* SmartMirrorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5914C6721EDCEC900A05B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5914C7A21EDCECB00A05B3B /* LaunchScreen.storyboard in Resources */,
+				C5914C7721EDCECB00A05B3B /* Assets.xcassets in Resources */,
+				C5914C7221EDCEC900A05B3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5914C7E21EDCECB00A05B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5914C8921EDCECB00A05B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14BA93153D2D8273043092DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SmartMirror/Pods-SmartMirror-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartMirror/Pods-SmartMirror-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		625B0BE16863F3FE9388357B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartMirrorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF528BFA1E3B590A7C49C894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartMirrorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD884FBF203F3C6C37B20217 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartMirror-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5914C6521EDCEC900A05B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5914CA721EF1F5D00A05B3B /* WeatherControllerModel.swift in Sources */,
+				C5914CA321EDE8E700A05B3B /* Weather.swift in Sources */,
+				C5914C6F21EDCEC900A05B3B /* ViewController.swift in Sources */,
+				C5914C6D21EDCEC900A05B3B /* AppDelegate.swift in Sources */,
+				C5914C7521EDCEC900A05B3B /* SmartMirror.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5914C7C21EDCECB00A05B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5914C8521EDCECB00A05B3B /* SmartMirrorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5914C8721EDCECB00A05B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5914C9021EDCECC00A05B3B /* SmartMirrorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5914C8221EDCECB00A05B3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5914C6821EDCEC900A05B3B /* SmartMirror */;
+			targetProxy = C5914C8121EDCECB00A05B3B /* PBXContainerItemProxy */;
+		};
+		C5914C8D21EDCECB00A05B3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5914C6821EDCEC900A05B3B /* SmartMirror */;
+			targetProxy = C5914C8C21EDCECB00A05B3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5914C7021EDCEC900A05B3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5914C7121EDCEC900A05B3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5914C7821EDCECB00A05B3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5914C7921EDCECB00A05B3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5914C9221EDCECC00A05B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5914C9321EDCECC00A05B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5914C9521EDCECC00A05B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A16EB8B81904BB754450AE7 /* Pods-SmartMirror.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/SmartMirror/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.codepanda.SmartMirror;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5914C9621EDCECC00A05B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CFD1CDAFA40557159DB17AE /* Pods-SmartMirror.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/SmartMirror/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.codepanda.SmartMirror;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C5914C9821EDCECC00A05B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C599485AB2644F083A998ED /* Pods-SmartMirrorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartMirrorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.codepanda.SmartMirrorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartMirror.app/SmartMirror";
+			};
+			name = Debug;
+		};
+		C5914C9921EDCECC00A05B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96F40235627CDD769B91E54 /* Pods-SmartMirrorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartMirrorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.codepanda.SmartMirrorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartMirror.app/SmartMirror";
+			};
+			name = Release;
+		};
+		C5914C9B21EDCECC00A05B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA69EC4639094D7D158C194 /* Pods-SmartMirrorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartMirrorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.codepanda.SmartMirrorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartMirror;
+			};
+			name = Debug;
+		};
+		C5914C9C21EDCECC00A05B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE440C1E9377DBA8752FA58 /* Pods-SmartMirrorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartMirrorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.codepanda.SmartMirrorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartMirror;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5914C6421EDCEC900A05B3B /* Build configuration list for PBXProject "SmartMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5914C9221EDCECC00A05B3B /* Debug */,
+				C5914C9321EDCECC00A05B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5914C9421EDCECC00A05B3B /* Build configuration list for PBXNativeTarget "SmartMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5914C9521EDCECC00A05B3B /* Debug */,
+				C5914C9621EDCECC00A05B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5914C9721EDCECC00A05B3B /* Build configuration list for PBXNativeTarget "SmartMirrorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5914C9821EDCECC00A05B3B /* Debug */,
+				C5914C9921EDCECC00A05B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5914C9A21EDCECC00A05B3B /* Build configuration list for PBXNativeTarget "SmartMirrorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5914C9B21EDCECC00A05B3B /* Debug */,
+				C5914C9C21EDCECC00A05B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C5914C7321EDCEC900A05B3B /* SmartMirror.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C5914C7421EDCEC900A05B3B /* SmartMirror.xcdatamodel */,
+			);
+			currentVersion = C5914C7421EDCEC900A05B3B /* SmartMirror.xcdatamodel */;
+			path = SmartMirror.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C5914C6121EDCEC900A05B3B /* Project object */;
+}
