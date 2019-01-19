@@ -10,6 +10,11 @@
 		4FF082439555AF1233DAEE86 /* Pods_SmartMirror.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5303B25001DFF031211ED83 /* Pods_SmartMirror.framework */; };
 		51A92D1073BE2AE501C28AE4 /* Pods_SmartMirrorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606DCCAA2B927EC83DE51E58 /* Pods_SmartMirrorUITests.framework */; };
 		AF05B8CE2EB8F84E4F8FD0AB /* Pods_SmartMirrorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE62F5C1C690463D1803D1A /* Pods_SmartMirrorTests.framework */; };
+		C53A9BF521F224F6002FF74D /* ForecastViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A9BF421F224F5002FF74D /* ForecastViewCell.swift */; };
+		C53A9BF721F32D5B002FF74D /* SpeechControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A9BF621F32D5B002FF74D /* SpeechControllerModel.swift */; };
+		C53A9BF921F34D19002FF74D /* WeatherControllerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A9BF821F34D19002FF74D /* WeatherControllerModelTests.swift */; };
+		C53A9BFE21F35466002FF74D /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A9BFD21F35466002FF74D /* WeatherTests.swift */; };
+		C53A9C0021F37066002FF74D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A9BFF21F37066002FF74D /* MapViewController.swift */; };
 		C5914C6D21EDCEC900A05B3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5914C6C21EDCEC900A05B3B /* AppDelegate.swift */; };
 		C5914C6F21EDCEC900A05B3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5914C6E21EDCEC900A05B3B /* ViewController.swift */; };
 		C5914C7221EDCEC900A05B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5914C7021EDCEC900A05B3B /* Main.storyboard */; };
@@ -47,6 +52,11 @@
 		606DCCAA2B927EC83DE51E58 /* Pods_SmartMirrorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMirrorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFD1CDAFA40557159DB17AE /* Pods-SmartMirror.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMirror.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMirror/Pods-SmartMirror.release.xcconfig"; sourceTree = "<group>"; };
 		BCE62F5C1C690463D1803D1A /* Pods_SmartMirrorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMirrorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C53A9BF421F224F5002FF74D /* ForecastViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewCell.swift; sourceTree = "<group>"; };
+		C53A9BF621F32D5B002FF74D /* SpeechControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechControllerModel.swift; sourceTree = "<group>"; };
+		C53A9BF821F34D19002FF74D /* WeatherControllerModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherControllerModelTests.swift; sourceTree = "<group>"; };
+		C53A9BFD21F35466002FF74D /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
+		C53A9BFF21F37066002FF74D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = SmartMirror/Controllers/MapViewController.swift; sourceTree = SOURCE_ROOT; };
 		C5914C6921EDCEC900A05B3B /* SmartMirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5914C6C21EDCEC900A05B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5914C6E21EDCEC900A05B3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +132,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C53A9BFA21F34D21002FF74D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C53A9BFB21F34D2A002FF74D /* ContollerModels */,
+				C53A9BFC21F3544D002FF74D /* DataModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C53A9BFB21F34D2A002FF74D /* ContollerModels */ = {
+			isa = PBXGroup;
+			children = (
+				C53A9BF821F34D19002FF74D /* WeatherControllerModelTests.swift */,
+			);
+			path = ContollerModels;
+			sourceTree = "<group>";
+		};
+		C53A9BFC21F3544D002FF74D /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				C53A9BFD21F35466002FF74D /* WeatherTests.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
 		C5914C6021EDCEC900A05B3B = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +193,7 @@
 		C5914C8321EDCECB00A05B3B /* SmartMirrorTests */ = {
 			isa = PBXGroup;
 			children = (
+				C53A9BFA21F34D21002FF74D /* Models */,
 				C5914C8421EDCECB00A05B3B /* SmartMirrorTests.swift */,
 				C5914C8621EDCECB00A05B3B /* Info.plist */,
 			);
@@ -187,6 +223,8 @@
 			children = (
 				C5914C6C21EDCEC900A05B3B /* AppDelegate.swift */,
 				C5914C6E21EDCEC900A05B3B /* ViewController.swift */,
+				C53A9BFF21F37066002FF74D /* MapViewController.swift */,
+				C53A9BF421F224F5002FF74D /* ForecastViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -223,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				C5914CA621EF1F5D00A05B3B /* WeatherControllerModel.swift */,
+				C53A9BF621F32D5B002FF74D /* SpeechControllerModel.swift */,
 			);
 			path = ControllerModels;
 			sourceTree = "<group>";
@@ -471,8 +510,11 @@
 				C5914CA721EF1F5D00A05B3B /* WeatherControllerModel.swift in Sources */,
 				C5914CA321EDE8E700A05B3B /* Weather.swift in Sources */,
 				C5914C6F21EDCEC900A05B3B /* ViewController.swift in Sources */,
+				C53A9BF521F224F6002FF74D /* ForecastViewCell.swift in Sources */,
 				C5914C6D21EDCEC900A05B3B /* AppDelegate.swift in Sources */,
+				C53A9BF721F32D5B002FF74D /* SpeechControllerModel.swift in Sources */,
 				C5914C7521EDCEC900A05B3B /* SmartMirror.xcdatamodeld in Sources */,
+				C53A9C0021F37066002FF74D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +522,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53A9BF921F34D19002FF74D /* WeatherControllerModelTests.swift in Sources */,
 				C5914C8521EDCECB00A05B3B /* SmartMirrorTests.swift in Sources */,
+				C53A9BFE21F35466002FF74D /* WeatherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

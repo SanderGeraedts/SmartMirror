@@ -48,15 +48,18 @@ class Weather {
         self.dateTime = dateTime
     }
     
+    // Rounded to 2 decimals
     func getTempInCelsius() -> Float {
-        return self.temp - 273.15
+        return round((self.temp - 273.15) * 100) / 100
     }
     
+    // Rounded to 2 decimals
     func getTempMinInCelsius() -> Float {
-        return self.temp_min - 273.15
+        return round((self.temp_min - 273.15) * 100) / 100
     }
     
+    // Rounded to 2 decimals
     func getTempMaxInCelsius() -> Float {
-        return self.temp_max - 273.15
+        return round((self.temp_max - 273.15) * 100) / 100
     }
 }

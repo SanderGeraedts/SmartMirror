@@ -8,6 +8,7 @@
 
 import XCTest
 
+@testable import SmartMirror
 class SmartMirrorUITests: XCTestCase {
 
     override func setUp() {
@@ -26,9 +27,46 @@ class SmartMirrorUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGoToAppointment() {
+        let validAddress = "10 Downing Street, London, UK"
+        
+        let app = XCUIApplication()
+        let searchField = app.textFields["Address"]
+        
+        searchField.tap()
+        
+        searchField.typeText(validAddress)
+        
+        app.buttons["Go to appointment"].tap()
+        
+        let map = app.maps.firstMatch
+        
+        expectation(for: NSPredicate(format: "exists == 1"), evaluatedWith: map, handler: nil)
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        XCTAssertTrue(map.exists)
+    }
+    
+    func testGoToAppointment_FakeAddress() {
+        let validAddress = "The Cupboard under the Stairs, 4 Privet Drive, Little Whinging, Surrey"
+        
+        let app = XCUIApplication()
+        let searchField = app.textFields["Address"]
+        
+        searchField.tap()
+        
+        searchField.typeText(validAddress)
+        
+        app.buttons["Go to appointment"].tap()
+        
+        let map = app.maps.firstMatch
+        
+        expectation(for: NSPredicate(format: "exists == 0"), evaluatedWith: map, handler: nil)
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        XCTAssertFalse(map.exists)
     }
 
 }
