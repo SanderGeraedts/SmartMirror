@@ -14,9 +14,10 @@ class SpeechControllerModel {
     
     func speak(text: String) {
         let speechUtterance = AVSpeechUtterance(string: text)
-        
-        speechUtterance.pitchMultiplier = 1.3
+        let voice = AVSpeechSynthesisVoice(language: "en-GB")
+        speechUtterance.pitchMultiplier = 0.9
         speechUtterance.rate = 0.525
+        speechUtterance.voice = voice
         
         speechSynthesizer.speak(speechUtterance)
     }

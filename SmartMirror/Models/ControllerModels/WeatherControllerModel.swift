@@ -29,7 +29,17 @@ class WeatherControllerModel {
                 }
                 
                 
-                let weather = Weather(id: weatherJSON["id"].intValue, city: weatherJSON["name"].stringValue, main: weatherJSON["weather"][0]["main"].stringValue, description: weatherJSON["weather"][0]["description"].stringValue, icon: weatherJSON["weather"][0]["icon"].stringValue, temp: weatherJSON["main"]["temp"].floatValue, temp_min: weatherJSON["main"]["temp_min"].floatValue, temp_max: weatherJSON["main"]["temp_max"].floatValue, dateTime: weatherJSON["dt"].doubleValue)
+                let weather = Weather(
+                    id: weatherJSON["id"].intValue,
+                    city: weatherJSON["name"].stringValue,
+                    main: weatherJSON["weather"][0]["main"].stringValue,
+                    description: weatherJSON["weather"][0]["description"].stringValue,
+                    icon: weatherJSON["weather"][0]["icon"].stringValue,
+                    temp: weatherJSON["main"]["temp"].floatValue,
+                    temp_min: weatherJSON["main"]["temp_min"].floatValue,
+                    temp_max: weatherJSON["main"]["temp_max"].floatValue,
+                    dateTime: weatherJSON["dt"].doubleValue
+                )
                 
                 completion(weather)
             } else {

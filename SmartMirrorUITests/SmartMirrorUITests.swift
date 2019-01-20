@@ -49,14 +49,14 @@ class SmartMirrorUITests: XCTestCase {
     }
     
     func testGoToAppointment_FakeAddress() {
-        let validAddress = "The Cupboard under the Stairs, 4 Privet Drive, Little Whinging, Surrey"
+        let invalidAddress = "Het oude strandhuis 1, Zoutelande"
         
         let app = XCUIApplication()
         let searchField = app.textFields["Address"]
         
         searchField.tap()
         
-        searchField.typeText(validAddress)
+        searchField.typeText(invalidAddress)
         
         app.buttons["Go to appointment"].tap()
         
